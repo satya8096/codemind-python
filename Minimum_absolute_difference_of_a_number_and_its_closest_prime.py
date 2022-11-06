@@ -8,11 +8,11 @@ def isprime(a):
     else:
         return False
 a=int(input())
-b=0
-if(isprime(a)):
+if isprime(a):
     print("0")
 else:
-    for i in range(a+1,1000000):
+    b=0
+    for i in range(a+1,10000000):
         if isprime(i):
             b=i
             break
@@ -23,7 +23,7 @@ else:
             break
     if b-a>a-d:
         print(a-d)
-    elif (b-a)==(a-b):
-        print("0")
+    elif (b-a)==(a-d):
+        print(a-d)
     else:
         print(b-a)
